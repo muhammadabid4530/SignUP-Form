@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In / Sign Up</title>
+<script src="frontEnd.js"></script>
+</head>
+<body>
+<div class="container">
+  <div id="displayForm">
+    <h2>Welcome!</h2>
+    <button onclick="showSignUpForm()">Sign Up</button>
+    <button onclick="showSignInForm()">Sign In</button>
+  </div>
+  <form id="signUpForm" style="display: none;">
+    <h2>Sign Up</h2>
+    <div class="form-group">
+      <label for="newUsername">E-Mail</label>
+      <input type="email" id="username" name="newUsername" required>
+    </div>
+    <div class="form-group">
+      <label for="newUsername">Name</label>
+      <input type="text" id="name" name="Name" required>
+    </div>
+    <div class="form-group">
+      <label for="newPassword">Password</label>
+      <input type="password" id="password" name="newPassword" value="" required>
+    </div>
+    <div class="form-group">
+      <button type="button" onclick="signUp()">Sign Up</button>
+    </div>
+  </form>
+  <form id="signInForm" style="display: none;">
+    <h2>Sign In</h2>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username1" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password1" name="password" required>
+    </div>
+    <div class="form-group">
+      <button type="button" onclick="signIn()">Sign In</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
